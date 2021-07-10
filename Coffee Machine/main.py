@@ -18,3 +18,4 @@ while machine_on:
         user_drink = menu.find_drink(user_input)
         if coffee_machine.is_resource_sufficient(user_drink) and money_machine.make_payment(user_drink.cost):
             coffee_machine.make_coffee(user_drink)
+ 
