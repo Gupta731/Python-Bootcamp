@@ -80,4 +80,4 @@ while machine_on:
     elif user_input == 'off':
         machine_on = False
     else:
-        print("Please enter correct choice")
+        print("Please enter correct choice") 
