@@ -78,9 +78,9 @@ def send_email(percentage_change, arrow):
 
 stock_percentage_change = get_stock_percentage_change()
 up_down = None
-if stock_percentage_change > 0:
+if stock_percentage_change > 5:
     up_down = '🔺'
     send_email(stock_percentage_change, up_down)
-else:
+elif stock_percentage_change < -5:
     up_down = '🔻'
     send_email(stock_percentage_change, up_down)
