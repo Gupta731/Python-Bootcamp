@@ -1,0 +1,1 @@
+Here I have used BeautifulSoup library for scraping empireonline website to get the top 100 movies of all time. I then create a text file and write the movie names in it to keep it handy.
