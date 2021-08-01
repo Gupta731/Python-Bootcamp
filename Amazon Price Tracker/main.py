@@ -11,8 +11,8 @@ AMAZON_HEADERS = {
     'User-Agent': 'Defined',
     'Accept-Language': 'en-GB,en;q=0.9,en-US;q=0.8',
 }
-MY_EMAIL = 'sourabhmahan@gmail.com'
-TO_EMAIL = 'tiu.f2.cse@gmail.com'
+MY_EMAIL = 'from_email@gmail.com'
+TO_EMAIL = 'to_email@gmail.com'
 PASSWORD = os.environ.get('PASSWORD')
 
 response = requests.get(url=AMAZON_PRODUCT_URL, headers=AMAZON_HEADERS)
