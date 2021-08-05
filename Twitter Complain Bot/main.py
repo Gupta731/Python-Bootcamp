@@ -6,7 +6,7 @@ from selenium.common.exceptions import NoSuchElementException, ElementClickInter
 from time import sleep
 import os
 
-EMAIl = 'sourabhmahan@gmail.com'
+EMAIl = YOUR_EMAIL_HERE
 PASSWORD = os.environ.get('PASSWORD')
 PROMISED_UP = 5
 PROMISED_DOWN = 5
