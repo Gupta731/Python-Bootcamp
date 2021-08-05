@@ -4,9 +4,9 @@ from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 import time
 
-ACCOUNT_EMAIL = 'sourabh.gupta.731@gmail.com'
-ACCOUNT_PASSWORD = 'Linked.11'
-PHONE = 9609529801
+ACCOUNT_EMAIL = YOUR_EMAIL_HERE
+ACCOUNT_PASSWORD = YOUR_PASSWORD_HERE
+PHONE = YOUR_PHONE_NUMBER
 
 edge_driver_path = 'C:/Edge Driver/msedgedriver.exe'
 s = ChromiumService(edge_driver_path, start_error_message='Error')
