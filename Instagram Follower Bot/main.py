@@ -6,9 +6,9 @@ from selenium.common.exceptions import NoSuchElementException, ElementClickInter
     StaleElementReferenceException
 from time import sleep
 
-EMAIL = 'tiu.f2.cse@gmail.com'
-PASSWORD = 'Insta.11'
-TARGET_ACCOUNT = 'chefsteps'
+EMAIL = YOUR_EMAIL_HERE
+PASSWORD = INSTAGRAM_PASSWORD
+TARGET_ACCOUNT = SOME_INSTA_ACCOUNT
 EDGE_DRIVER_PATH = 'C:/Edge Driver/msedgedriver.exe'
 
 
@@ -19,6 +19,7 @@ class InstaFollower:
         self.driver.maximize_window()
 
     def login(self):
+		"""Login to Instagram and dismiss all popups"""
         self.driver.get('https://www.instagram.com/accounts/login/')
         sleep(5)
         user_name = self.driver.find_element(By.NAME, 'username')
@@ -41,6 +42,7 @@ class InstaFollower:
         sleep(5)
 
     def find_followers(self):
+		"""Find followers of a target account"""
         self.driver.get(f'https://www.instagram.com/{TARGET_ACCOUNT}')
         sleep(10)
         followers = self.driver.find_element(By.XPATH, '//*[@id="react-root"]/section/main/div/header/section/'
@@ -49,6 +51,7 @@ class InstaFollower:
         sleep(5)
 
     def follow(self):
+		"""Follow all the followers of the target account"""
         popup = self.driver.find_element(By.XPATH, '/html/body/div[6]/div/div/div[2]')
         for i in range(2):
             self.driver.execute_script("arguments[0].scrollTop = arguments[0].scrollTop + arguments[0].offsetHeight;",
@@ -80,6 +83,7 @@ class InstaFollower:
             sleep(1)
 
     def logout(self):
+		"""Logout of Instagram"""
         profile_button = self.driver.find_element(By.CSS_SELECTOR, '.qNELH')
         profile_button.click()
         sleep(1)
