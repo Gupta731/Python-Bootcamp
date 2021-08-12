@@ -15,6 +15,7 @@ class DataEntry:
         self.driver.maximize_window()
 
     def submit_data(self):
+		"""Uses Selenium web driver to repeatedly fill the google form and submit the data for all the postings in zillow website"""
         for data in property_data:
             self.driver.get(FORMS_URL)
             sleep(3)
