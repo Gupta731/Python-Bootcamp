@@ -18,7 +18,7 @@ class GetListings:
         self.property_listings = []
 
     def get_listing_details(self):
-		"""Scraps the zillow real estate posting website to get details like address, price and link to the post"""
+	"""Scraps the zillow real estate posting website to get details like address, price and link to the post"""
         listing_address = [item.text for item in self.soup.select(selector='.photo-cards_short li address')]
         listing_price = flatten([re.findall(r"\$[\w]+,[\w]+", item.text) for item in
                                  self.soup.select(selector='.photo-cards_short li .list-card-price')])
