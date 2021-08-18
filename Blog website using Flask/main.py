@@ -5,9 +5,9 @@ from datetime import datetime
 import smtplib
 
 
-MY_EMAIL = 'sourabhmahan@gmail.com'
-PASSWORD = 'zbuwesyqvzxdlqfm'
-TO_EMAIL = 'tiu.f2.cse@gmail.com'
+MY_EMAIL = 'YOUR_EMAIL_ID'
+PASSWORD = 'YOUR_MAIL_PASSWORD'
+TO_EMAIL = 'RECIPIENT_EMAIL_ID'
 
 app = Flask(__name__)
 
