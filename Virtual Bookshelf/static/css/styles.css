@@ -1,0 +1,28 @@
+
+body {
+background-color: #333;
+color: white;
+}
+
+a {
+    color: #ffc107;
+}
+
+p {
+    margin-left:20px;
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  height: 10vh;
+  color: white;
+  background-color: #333;
+}
+
+.space-above {
+    margin-top: 20px;
+    padding-top: 20px;
+    margin-left:20px;
+}

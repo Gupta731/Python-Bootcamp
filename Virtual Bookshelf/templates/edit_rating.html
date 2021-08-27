@@ -1,0 +1,25 @@
+{% extends 'bootstrap/base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block styles %}
+    {{ super() }}
+    <link rel="stylesheet" href="/static/css/styles.css">
+{% endblock %}
+
+{% block title %}Edit Rating{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-8">
+          <h1>Edit a Book's Rating</h1>
+            <h4>Book Name: {{ book['title'] }}</h4>
+            <h4>Current Rating: {{ book['rating'] }}</h4>
+          <form action="{{ url_for('edit_rating', id=book['id']) }}" method="post" novalidate>
+              <input hidden="hidden" name="id" value="{{book.id}}">
+              {{ wtf.quick_form(form) }}
+          </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
