@@ -1,6 +1,6 @@
 This data entry automation program can scrap a website for relevant information and fills in google forms with the data automatically.
 
-I have taken the case of home rental posts on Zillow website for San Francisco location. Using BeautifulSoup, I have scrapping the details like price, address and link to the post for all the listings and saving it in lists.
+I have taken the case of home rental posts on Zillow website for San Francisco location. Using BeautifulSoup, I have scrapped the details like price, address and link to the post for all the listings and saving it in lists.
 I have then made use of Selenium WebDriver to open a previously created google form and fill in the relevant details for each listing and click on the submit button.
 This way we can have a spreadsheet with all the relevant information in very less time. We can also modify this code to suit different use cases.
 Concepts used: BeautifulSoup, Selenium WebDriver, OOP
